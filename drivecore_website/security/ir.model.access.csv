@@ -1,3 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_drivecore_service_request_user,drivecore.service.request user,model_drivecore_service_request,base.group_user,1,1,1,1
-access_drivecore_contact_request_user,drivecore.contact.request user,model_drivecore_contact_request,base.group_user,1,1,1,1
