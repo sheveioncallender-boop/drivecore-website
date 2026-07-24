@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- Root / internally reroutes to this real website.page. -->
+    <record id="website.default_website" model="website">
+        <field name="homepage_url">/drivecore-home</field>
+    </record>
+
+    <!-- Also correct databases where eCommerce previously set /shop as homepage. -->
+    <function model="website" name="drivecore_activate_homepage"/>
+</odoo>
