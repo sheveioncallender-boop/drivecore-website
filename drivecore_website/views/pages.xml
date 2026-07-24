@@ -1,0 +1,1052 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+  <!--
+        The DriveCore homepage replaces Odoo's real / homepage instead of
+        creating a second page and attempting to reroute to it. This is the
+        reliable Odoo 19 approach and also upgrades databases that previously
+        opened /shop or /drivecore-home at the root URL.
+    -->
+  <template id="drivecore_home_content" name="DriveCore Home Content">
+    <main id="wrap" class="oe_structure dc-page dc-homepage">
+      <section class="dc-home-hero">
+        <div class="dc-shell dc-home-hero-grid">
+          <div class="dc-home-hero-copy">
+            <p class="dc-kicker"><span/> Complete Automotive Care</p>
+            <h1><span class="dc-hero-title-white">Complete Auto Care.</span><em>Expert Service.<br/>Every Time.</em></h1>
+            <p class="dc-hero-lead">Professional diagnostics, repairs and maintenance in Freeport—delivered with clear advice, careful workmanship and respect for your vehicle.</p>
+            <div class="dc-button-row">
+              <a class="dc-btn dc-btn-primary" href="/book-a-service"><i class="fa fa-calendar-check-o"/> Book a Service</a>
+              <a class="dc-btn dc-btn-outline" href="tel:+18683759633"><i class="fa fa-phone"/> 1 868 375 9633</a>
+            </div>
+            <div class="dc-hero-proof">
+              <div>
+                <i class="fa fa-check"/>
+                <span>
+                  <b>All makes and models</b>
+                  <small>Cars, SUVs and imports</small>
+                </span>
+              </div>
+              <div>
+                <i class="fa fa-check"/>
+                <span>
+                  <b>Customer-first service</b>
+                  <small>Clear recommendations</small>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="dc-home-hero-photo" role="img" aria-label="Professional mechanic inspecting a customer's vehicle">
+            <div class="dc-photo-label">
+              <i class="fa fa-shield"/>
+              <span>
+                <b>Driven by trust.</b>
+                <small>Delivered with excellence.</small>
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="dc-trust-bar" aria-label="DriveCore service promises">
+        <div class="dc-shell dc-trust-grid">
+          <div class="dc-trust-item">
+            <i class="fa fa-shield"/>
+            <span>
+              <b>Quality You Can Trust</b>
+              <small>Careful work and dependable parts</small>
+            </span>
+          </div>
+          <div class="dc-trust-item">
+            <i class="fa fa-wrench"/>
+            <span>
+              <b>Skilled Technicians</b>
+              <small>Focused, thorough vehicle care</small>
+            </span>
+          </div>
+          <div class="dc-trust-item">
+            <i class="fa fa-car"/>
+            <span>
+              <b>All Makes &amp; Models</b>
+              <small>Practical support for every drive</small>
+            </span>
+          </div>
+          <div class="dc-trust-item">
+            <i class="fa fa-comments"/>
+            <span>
+              <b>Clear Communication</b>
+              <small>Understand the work before it starts</small>
+            </span>
+          </div>
+        </div>
+      </section>
+      <section class="dc-section dc-services-home">
+        <div class="dc-shell">
+          <div class="dc-heading dc-heading-split">
+            <div>
+              <p class="dc-kicker"><span/> Our Services</p>
+              <h2>Complete care for <em>every drive.</em></h2>
+            </div>
+            <p>From warning lights and unusual noises to scheduled maintenance, DriveCore helps identify the issue and guide the right next step.</p>
+          </div>
+          <div class="dc-service-grid">
+            <article class="dc-service-card dc-service-wheel">
+              <div class="dc-service-photo">
+                <span class="dc-card-number">01</span>
+              </div>
+              <div class="dc-service-card-body">
+                <i class="fa fa-crosshairs"/>
+                <h3>Wheel Alignment</h3>
+                <p>Precision alignment for steadier handling, improved tyre life and a safer drive.</p>
+                <a href="/drivecore/service/wheel-alignment">Explore service <i class="fa fa-long-arrow-right"/></a>
+              </div>
+            </article>
+            <article class="dc-service-card dc-service-mechanical">
+              <div class="dc-service-photo">
+                <span class="dc-card-number">02</span>
+              </div>
+              <div class="dc-service-card-body">
+                <i class="fa fa-wrench"/>
+                <h3>Mechanical Repairs</h3>
+                <p>Practical, dependable repairs to restore performance and keep you moving.</p>
+                <a href="/drivecore/service/mechanical-repairs">Explore service <i class="fa fa-long-arrow-right"/></a>
+              </div>
+            </article>
+            <article class="dc-service-card dc-service-diagnostics">
+              <div class="dc-service-photo">
+                <span class="dc-card-number">03</span>
+              </div>
+              <div class="dc-service-card-body">
+                <i class="fa fa-laptop"/>
+                <h3>Vehicle Diagnostics</h3>
+                <p>Modern fault finding that helps identify the correct problem before repairs begin.</p>
+                <a href="/drivecore/service/vehicle-diagnostics">Explore service <i class="fa fa-long-arrow-right"/></a>
+              </div>
+            </article>
+            <article class="dc-service-card dc-service-engine">
+              <div class="dc-service-photo">
+                <span class="dc-card-number">04</span>
+              </div>
+              <div class="dc-service-card-body">
+                <i class="fa fa-cogs"/>
+                <h3>Engine Services</h3>
+                <p>Engine inspections, tune-ups and troubleshooting focused on long-term reliability.</p>
+                <a href="/drivecore/service/engine-services">Explore service <i class="fa fa-long-arrow-right"/></a>
+              </div>
+            </article>
+            <article class="dc-service-card dc-service-brakes">
+              <div class="dc-service-photo">
+                <span class="dc-card-number">05</span>
+              </div>
+              <div class="dc-service-card-body">
+                <i class="fa fa-stop-circle-o"/>
+                <h3>Brake Service</h3>
+                <p>Brake inspections and service for confident stopping and safer daily driving.</p>
+                <a href="/drivecore/service/brake-service">Explore service <i class="fa fa-long-arrow-right"/></a>
+              </div>
+            </article>
+            <article class="dc-service-card dc-service-maintenance">
+              <div class="dc-service-photo">
+                <span class="dc-card-number">06</span>
+              </div>
+              <div class="dc-service-card-body">
+                <i class="fa fa-tint"/>
+                <h3>Maintenance &amp; More</h3>
+                <p>Routine care that supports dependable performance and helps prevent larger repairs.</p>
+                <a href="/drivecore/service/maintenance-more">Explore service <i class="fa fa-long-arrow-right"/></a>
+              </div>
+            </article>
+          </div>
+          <div class="dc-section-action">
+            <a class="dc-btn dc-btn-outline" href="/services">View All Services <i class="fa fa-angle-right"/></a>
+          </div>
+        </div>
+      </section>
+      <section class="dc-section dc-about-home">
+        <div class="dc-shell dc-media-grid">
+          <div class="dc-about-photo" role="img" aria-label="Automotive technicians working together in a professional workshop">
+            <div class="dc-photo-stat">
+              <strong>One Stop.</strong>
+              <span>Total Care.</span>
+            </div>
+          </div>
+          <div class="dc-media-copy">
+            <p class="dc-kicker"><span/> About DriveCore</p>
+            <h2>A new company built around <em>better service.</em></h2>
+            <p class="dc-lead">DriveCore was created to give vehicle owners a more dependable auto-care experience—one grounded in careful assessment, honest communication and quality workmanship.</p>
+            <p>We are building our reputation one customer at a time. That means listening properly, explaining recommendations clearly and treating every vehicle with the attention it deserves.</p>
+            <ul class="dc-check-list">
+              <li><i class="fa fa-check"/> Transparent service recommendations</li>
+              <li><i class="fa fa-check"/> Attention to safety and reliability</li>
+              <li><i class="fa fa-check"/> Professional care for all makes and models</li>
+            </ul>
+            <a class="dc-text-link" href="/about-us">Discover the DriveCore approach <i class="fa fa-long-arrow-right"/></a>
+          </div>
+        </div>
+      </section>
+      <section class="dc-section dc-why-section">
+        <div class="dc-shell">
+          <div class="dc-heading dc-center">
+            <p class="dc-kicker"><span/> Why DriveCore</p>
+            <h2>Service designed around <em>your confidence.</em></h2>
+            <p>Good vehicle care is not only about the repair. It is also about knowing what is happening, why it matters and what comes next.</p>
+          </div>
+          <div class="dc-value-grid">
+            <article>
+              <span>01</span>
+              <i class="fa fa-search"/>
+              <h3>Careful Assessment</h3>
+              <p>We start by understanding the concern and inspecting the vehicle before recommending the work.</p>
+            </article>
+            <article>
+              <span>02</span>
+              <i class="fa fa-comments-o"/>
+              <h3>Clear Explanations</h3>
+              <p>We explain findings and recommended next steps in straightforward language.</p>
+            </article>
+            <article>
+              <span>03</span>
+              <i class="fa fa-shield"/>
+              <h3>Quality-Focused Work</h3>
+              <p>Every service is approached with consistency, attention to detail and respect for your vehicle.</p>
+            </article>
+            <article>
+              <span>04</span>
+              <i class="fa fa-handshake-o"/>
+              <h3>Customer-First Support</h3>
+              <p>Questions are welcome, and your approval matters before additional work proceeds.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="dc-section dc-process-section">
+        <div class="dc-shell">
+          <div class="dc-heading dc-heading-split">
+            <div>
+              <p class="dc-kicker"><span/> How It Works</p>
+              <h2>A simple process. <em>Professional results.</em></h2>
+            </div>
+            <p>From the first call to vehicle collection, we keep the process organised and easy to understand.</p>
+          </div>
+          <div class="dc-process-grid">
+            <article>
+              <b>1</b>
+              <i class="fa fa-calendar"/>
+              <h3>Request a Service</h3>
+              <p>Tell us about the vehicle and choose your preferred date.</p>
+            </article>
+            <article>
+              <b>2</b>
+              <i class="fa fa-car"/>
+              <h3>Bring In Your Vehicle</h3>
+              <p>Our team listens to your concern and begins the initial inspection.</p>
+            </article>
+            <article>
+              <b>3</b>
+              <i class="fa fa-stethoscope"/>
+              <h3>Assess &amp; Explain</h3>
+              <p>We identify the issue and explain the recommended solution.</p>
+            </article>
+            <article>
+              <b>4</b>
+              <i class="fa fa-check-square-o"/>
+              <h3>Approve the Work</h3>
+              <p>You review the recommendation before the repair proceeds.</p>
+            </article>
+            <article>
+              <b>5</b>
+              <i class="fa fa-key"/>
+              <h3>Drive Away Confidently</h3>
+              <p>Collect your vehicle with a clear summary of completed work.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="dc-cta-band">
+        <div class="dc-shell dc-cta-band-inner">
+          <div>
+            <p class="dc-kicker"><span/> One Stop. Total Care.</p>
+            <h2>Ready to give your vehicle the attention it needs?</h2>
+          </div>
+          <div class="dc-button-row">
+            <a class="dc-btn dc-btn-primary" href="/book-a-service">Book a Service</a>
+            <a class="dc-btn dc-btn-outline" href="https://wa.me/18683759633" target="_blank" rel="noopener"><i class="fa fa-whatsapp"/> WhatsApp Us</a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </template>
+  <template id="drivecore_homepage" inherit_id="website.homepage" name="DriveCore Homepage" active="True">
+    <xpath expr="//div[@id='wrap']" position="replace">
+      <t t-call="drivecore_website.drivecore_home_content"/>
+    </xpath>
+  </template>
+  <!-- Retire the page used by v1.2 so upgrades cannot keep routing to it. -->
+  <template id="drivecore_homepage_page" name="DriveCore Homepage Renderer">
+    <t t-call="website.layout">
+      <t t-set="additional_title">DriveCore Auto Import &amp; Solutions | Auto Care Freeport Trinidad</t>
+      <t t-set="meta_description">Professional diagnostics, mechanical repairs, brake service, wheel alignment and vehicle maintenance in Freeport, Trinidad.</t>
+      <t t-call="drivecore_website.drivecore_home_content"/>
+    </t>
+  </template>
+  <record id="page_drivecore_home" model="website.page">
+    <field name="name">DriveCore Legacy Home</field>
+    <field name="url">/drivecore-home-legacy</field>
+    <field name="is_published" eval="False"/>
+    <field name="view_id" ref="drivecore_homepage_page"/>
+  </record>
+  <template id="drivecore_about_page" name="DriveCore About Us">
+    <t t-call="website.layout">
+      <t t-set="additional_title">About DriveCore | Trusted Auto Care in Trinidad</t>
+      <t t-set="meta_description">Learn about DriveCore's customer-first approach to professional automotive repairs, diagnostics and maintenance in Freeport, Trinidad.</t>
+      <main id="wrap" class="oe_structure dc-page">
+        <section class="dc-inner-hero dc-about-hero">
+          <div class="dc-shell">
+            <p class="dc-kicker"><span/> About DriveCore</p>
+            <h1>Built to raise the standard of <em>auto care.</em></h1>
+            <p>Professional service, honest advice and careful workmanship focused on keeping you confidently on the road.</p>
+          </div>
+        </section>
+        <section class="dc-section">
+          <div class="dc-shell dc-media-grid dc-about-story">
+            <div class="dc-about-photo dc-about-photo-tall" role="img" aria-label="Professional automotive team in a workshop">
+              <div class="dc-photo-label">
+                <i class="fa fa-map-marker"/>
+                <span>
+                  <b>Freeport, Trinidad</b>
+                  <small>350 Mission Road</small>
+                </span>
+              </div>
+            </div>
+            <div class="dc-media-copy">
+              <p class="dc-kicker"><span/> Our Story</p>
+              <h2>New company. Clear purpose. <em>High standards.</em></h2>
+              <p class="dc-lead">DriveCore Auto Import &amp; Solutions Limited was founded to deliver the kind of automotive service every driver deserves: careful inspection, clear explanations and dependable workmanship.</p>
+              <p>We understand that vehicle problems can be stressful. Our goal is to make the service experience more straightforward by listening carefully, communicating honestly and recommending practical solutions based on the vehicle's actual needs.</p>
+              <p>As a new company, every customer relationship matters. We are committed to earning trust through consistency—not assumptions, pressure or unnecessary work.</p>
+            </div>
+          </div>
+        </section>
+        <section class="dc-section dc-values-section">
+          <div class="dc-shell">
+            <div class="dc-heading dc-center">
+              <p class="dc-kicker"><span/> What Guides Us</p>
+              <h2>Our core <em>values.</em></h2>
+            </div>
+            <div class="dc-value-grid">
+              <article>
+                <span>01</span>
+                <i class="fa fa-balance-scale"/>
+                <h3>Integrity</h3>
+                <p>We communicate honestly and recommend work based on the vehicle's real needs.</p>
+              </article>
+              <article>
+                <span>02</span>
+                <i class="fa fa-certificate"/>
+                <h3>Quality</h3>
+                <p>We approach each service with care, consistency and attention to detail.</p>
+              </article>
+              <article>
+                <span>03</span>
+                <i class="fa fa-users"/>
+                <h3>Respect</h3>
+                <p>We value your time, your questions and the trust you place in our team.</p>
+              </article>
+              <article>
+                <span>04</span>
+                <i class="fa fa-line-chart"/>
+                <h3>Improvement</h3>
+                <p>We continually strengthen our knowledge, processes and customer experience.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+        <section class="dc-section">
+          <div class="dc-shell dc-mission-grid">
+            <article>
+              <p class="dc-kicker"><span/> Our Mission</p>
+              <h2>Service you can <em>depend on.</em></h2>
+              <p>To provide high-quality automotive care with transparent communication, practical solutions and a genuine commitment to customer satisfaction.</p>
+            </article>
+            <article>
+              <p class="dc-kicker"><span/> Our Vision</p>
+              <h2>A trusted name in <em>vehicle care.</em></h2>
+              <p>To grow into a leading automotive service partner known throughout Trinidad and Tobago for reliability, technical care and an excellent customer experience.</p>
+            </article>
+          </div>
+        </section>
+        <section class="dc-cta-band">
+          <div class="dc-shell dc-cta-band-inner">
+            <div>
+              <p class="dc-kicker"><span/> Better Auto Care</p>
+              <h2>Tell us what your vehicle needs.</h2>
+            </div>
+            <a class="dc-btn dc-btn-primary" href="/book-a-service">Book Your Service</a>
+          </div>
+        </section>
+      </main>
+    </t>
+  </template>
+  <template id="drivecore_services_page" name="DriveCore Services">
+    <t t-call="website.layout">
+      <t t-set="additional_title">Automotive Services | DriveCore Freeport Trinidad</t>
+      <t t-set="meta_description">Explore DriveCore services including wheel alignment, mechanical repairs, diagnostics, engine services, brakes and maintenance.</t>
+      <main id="wrap" class="oe_structure dc-page">
+        <section class="dc-inner-hero dc-services-hero">
+          <div class="dc-shell">
+            <p class="dc-kicker"><span/> Services</p>
+            <h1>Professional care for every part of <em>your drive.</em></h1>
+            <p>Focused automotive services designed to support safety, performance and long-term reliability.</p>
+          </div>
+        </section>
+        <section class="dc-section">
+          <div class="dc-shell">
+            <div class="dc-heading dc-heading-split">
+              <div>
+                <p class="dc-kicker"><span/> Complete Auto Care</p>
+                <h2>Find the service your <em>vehicle needs.</em></h2>
+              </div>
+              <p>Not sure which service to choose? Describe what you are noticing when booking, and our team will help guide the initial assessment.</p>
+            </div>
+            <div class="dc-service-grid dc-service-grid-page">
+              <article class="dc-service-card dc-service-wheel">
+                <div class="dc-service-photo">
+                  <span class="dc-card-number">01</span>
+                </div>
+                <div class="dc-service-card-body">
+                  <i class="fa fa-crosshairs"/>
+                  <h3>Wheel Alignment</h3>
+                  <p>Correct steering pull, uneven tyre wear and handling concerns with a precise alignment assessment.</p>
+                  <ul>
+                    <li>Alignment checks</li>
+                    <li>Steering and handling review</li>
+                    <li>Tyre-wear guidance</li>
+                  </ul>
+                  <a href="/drivecore/service/wheel-alignment">View details <i class="fa fa-long-arrow-right"/></a>
+                </div>
+              </article>
+              <article class="dc-service-card dc-service-mechanical">
+                <div class="dc-service-photo">
+                  <span class="dc-card-number">02</span>
+                </div>
+                <div class="dc-service-card-body">
+                  <i class="fa fa-wrench"/>
+                  <h3>Mechanical Repairs</h3>
+                  <p>Dependable repairs for worn components, leaks, unusual noises and drivability concerns.</p>
+                  <ul>
+                    <li>Mechanical inspection</li>
+                    <li>Repair recommendations</li>
+                    <li>Quality replacement parts</li>
+                  </ul>
+                  <a href="/drivecore/service/mechanical-repairs">View details <i class="fa fa-long-arrow-right"/></a>
+                </div>
+              </article>
+              <article class="dc-service-card dc-service-diagnostics">
+                <div class="dc-service-photo">
+                  <span class="dc-card-number">03</span>
+                </div>
+                <div class="dc-service-card-body">
+                  <i class="fa fa-laptop"/>
+                  <h3>Vehicle Diagnostics</h3>
+                  <p>Scan-tool checks and physical inspection to trace warning lights and electronic faults.</p>
+                  <ul>
+                    <li>Warning-light diagnosis</li>
+                    <li>Live data checks</li>
+                    <li>Clear repair guidance</li>
+                  </ul>
+                  <a href="/drivecore/service/vehicle-diagnostics">View details <i class="fa fa-long-arrow-right"/></a>
+                </div>
+              </article>
+              <article class="dc-service-card dc-service-engine">
+                <div class="dc-service-photo">
+                  <span class="dc-card-number">04</span>
+                </div>
+                <div class="dc-service-card-body">
+                  <i class="fa fa-cogs"/>
+                  <h3>Engine Services</h3>
+                  <p>Routine engine care and troubleshooting for performance, cooling and reliability concerns.</p>
+                  <ul>
+                    <li>Tune-ups and inspections</li>
+                    <li>Leak and noise diagnosis</li>
+                    <li>Performance troubleshooting</li>
+                  </ul>
+                  <a href="/drivecore/service/engine-services">View details <i class="fa fa-long-arrow-right"/></a>
+                </div>
+              </article>
+              <article class="dc-service-card dc-service-brakes">
+                <div class="dc-service-photo">
+                  <span class="dc-card-number">05</span>
+                </div>
+                <div class="dc-service-card-body">
+                  <i class="fa fa-stop-circle-o"/>
+                  <h3>Brake Service</h3>
+                  <p>Brake inspection and servicing for noise, vibration, wear and reduced stopping confidence.</p>
+                  <ul>
+                    <li>Pad and rotor inspection</li>
+                    <li>Brake-fluid checks</li>
+                    <li>Noise and vibration review</li>
+                  </ul>
+                  <a href="/drivecore/service/brake-service">View details <i class="fa fa-long-arrow-right"/></a>
+                </div>
+              </article>
+              <article class="dc-service-card dc-service-maintenance">
+                <div class="dc-service-photo">
+                  <span class="dc-card-number">06</span>
+                </div>
+                <div class="dc-service-card-body">
+                  <i class="fa fa-tint"/>
+                  <h3>Maintenance &amp; More</h3>
+                  <p>Routine servicing and preventive checks designed to support dependable daily driving.</p>
+                  <ul>
+                    <li>Oil and filter service</li>
+                    <li>Fluid and belt checks</li>
+                    <li>General safety inspection</li>
+                  </ul>
+                  <a href="/drivecore/service/maintenance-more">View details <i class="fa fa-long-arrow-right"/></a>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+        <section class="dc-section dc-process-section">
+          <div class="dc-shell dc-media-grid">
+            <div class="dc-service-feature-photo" role="img" aria-label="Mechanic carrying out a professional vehicle inspection"/>
+            <div class="dc-media-copy">
+              <p class="dc-kicker"><span/> Our Approach</p>
+              <h2>We diagnose before we <em>recommend.</em></h2>
+              <p class="dc-lead">Good repairs begin with a careful assessment. We take time to understand the symptoms, inspect the relevant systems and explain the recommended next step.</p>
+              <ul class="dc-check-list">
+                <li><i class="fa fa-check"/> Listen to the concern and vehicle history</li>
+                <li><i class="fa fa-check"/> Inspect and test before replacing parts</li>
+                <li><i class="fa fa-check"/> Explain findings and priorities clearly</li>
+                <li><i class="fa fa-check"/> Proceed with approved work</li>
+              </ul>
+              <a class="dc-btn dc-btn-primary" href="/book-a-service">Request an Appointment</a>
+            </div>
+          </div>
+        </section>
+        <section class="dc-cta-band">
+          <div class="dc-shell dc-cta-band-inner">
+            <div>
+              <p class="dc-kicker"><span/> Not Sure What You Need?</p>
+              <h2>Tell us what the vehicle is doing.</h2>
+            </div>
+            <a class="dc-btn dc-btn-primary" href="/book-a-service">Start a Service Request</a>
+          </div>
+        </section>
+      </main>
+    </t>
+  </template>
+  <template id="drivecore_booking_page" name="DriveCore Book a Service">
+    <t t-call="website.layout">
+      <t t-set="additional_title">Book a Service | DriveCore Freeport Trinidad</t>
+      <t t-set="meta_description">Request an automotive service appointment with DriveCore at 350 Mission Road, Freeport, Trinidad.</t>
+      <main id="wrap" class="oe_structure dc-page">
+        <section class="dc-inner-hero dc-booking-hero">
+          <div class="dc-shell">
+            <p class="dc-kicker"><span/> Book a Service</p>
+            <h1>Tell us what your vehicle <em>needs.</em></h1>
+            <p>Complete the request form and our team will contact you to confirm availability and the next step.</p>
+          </div>
+        </section>
+        <section class="dc-section">
+          <div class="dc-shell dc-booking-grid">
+            <div class="dc-form-card">
+              <div class="dc-form-heading">
+                <p class="dc-kicker"><span/> Service Request</p>
+                <h2>Request an <em>appointment.</em></h2>
+                <p>Fields marked with an asterisk are required. Submitting this form does not confirm the appointment until DriveCore contacts you.</p>
+              </div>
+              <t t-if="request.params.get('error') == 'missing'">
+                <div class="dc-alert"><i class="fa fa-exclamation-circle"/> Please complete the required contact fields.</div>
+              </t>
+              <form class="dc-form" action="/drivecore/book/submit" method="post">
+                <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                <div class="dc-form-grid">
+                  <label>
+                    <span>Full Name *</span>
+                    <input type="text" name="name" required="required" autocomplete="name" placeholder="Your full name"/>
+                  </label>
+                  <label>
+                    <span>Phone Number *</span>
+                    <input type="tel" name="phone" required="required" autocomplete="tel" placeholder="1 868 000 0000"/>
+                  </label>
+                  <label>
+                    <span>Email Address *</span>
+                    <input type="email" name="email" required="required" autocomplete="email" placeholder="name@example.com"/>
+                  </label>
+                  <label>
+                    <span>Vehicle Make</span>
+                    <input type="text" name="vehicle_make" placeholder="e.g. Toyota"/>
+                  </label>
+                  <label>
+                    <span>Vehicle Model</span>
+                    <input type="text" name="vehicle_model" placeholder="e.g. Corolla"/>
+                  </label>
+                  <label>
+                    <span>Vehicle Year</span>
+                    <input type="text" name="vehicle_year" inputmode="numeric" placeholder="e.g. 2022"/>
+                  </label>
+                  <label>
+                    <span>Registration Number</span>
+                    <input type="text" name="registration_number" placeholder="Vehicle registration"/>
+                  </label>
+                  <label>
+                    <span>Service Required *</span>
+                    <select name="service_type" required="required">
+                      <option value="other">Not Sure / Other</option>
+                      <option value="wheel_alignment">Wheel Alignment</option>
+                      <option value="mechanical_repairs">Mechanical Repairs</option>
+                      <option value="diagnostics">Vehicle Diagnostics</option>
+                      <option value="engine_services">Engine Services</option>
+                      <option value="brake_service">Brake Service</option>
+                      <option value="maintenance">Maintenance &amp; More</option>
+                    </select>
+                  </label>
+                  <label>
+                    <span>Preferred Date</span>
+                    <input type="date" name="preferred_date"/>
+                  </label>
+                  <label>
+                    <span>Preferred Time</span>
+                    <select name="preferred_time">
+                      <option value="">Select a time</option>
+                      <option value="morning">Morning</option>
+                      <option value="midday">Midday</option>
+                      <option value="afternoon">Afternoon</option>
+                    </select>
+                  </label>
+                  <label class="dc-field-full">
+                    <span>Describe the Issue / Additional Information</span>
+                    <textarea name="issue_description" rows="6" placeholder="Tell us what you are noticing, when it happens and any warning lights shown."/>
+                  </label>
+                </div>
+                <button class="dc-btn dc-btn-primary dc-submit" type="submit"><i class="fa fa-paper-plane"/> Submit Service Request</button>
+              </form>
+            </div>
+            <aside class="dc-booking-aside">
+              <div class="dc-booking-photo" role="img" aria-label="Professional mechanic inspecting a vehicle"/>
+              <div class="dc-aside-panel">
+                <p class="dc-kicker"><span/> What Happens Next</p>
+                <ol>
+                  <li>
+                    <b>We review the request.</b>
+                    <span>Our team checks the vehicle and service information.</span>
+                  </li>
+                  <li>
+                    <b>We contact you.</b>
+                    <span>We confirm availability and clarify any details.</span>
+                  </li>
+                  <li>
+                    <b>You bring the vehicle in.</b>
+                    <span>We begin with an initial inspection or assessment.</span>
+                  </li>
+                </ol>
+              </div>
+              <div class="dc-aside-panel dc-aside-contact">
+                <h3>Need help now?</h3>
+                <a href="tel:+18683759633"><i class="fa fa-phone"/> 1 868 375 9633</a>
+                <a href="https://wa.me/18683759633" target="_blank" rel="noopener"><i class="fa fa-whatsapp"/> Message on WhatsApp</a>
+              </div>
+            </aside>
+          </div>
+        </section>
+      </main>
+    </t>
+  </template>
+  <template id="drivecore_faq_page" name="DriveCore FAQ">
+    <t t-call="website.layout">
+      <t t-set="additional_title">Frequently Asked Questions | DriveCore</t>
+      <main id="wrap" class="oe_structure dc-page">
+        <section class="dc-inner-hero dc-faq-hero">
+          <div class="dc-shell">
+            <p class="dc-kicker"><span/> Frequently Asked Questions</p>
+            <h1>Helpful answers before your <em>next service.</em></h1>
+            <p>Learn how booking, inspections, estimates and vehicle collection work at DriveCore.</p>
+          </div>
+        </section>
+        <section class="dc-section">
+          <div class="dc-shell dc-faq-layout">
+            <div class="dc-faq-intro">
+              <p class="dc-kicker"><span/> Good to Know</p>
+              <h2>Clear information from the <em>start.</em></h2>
+              <p>Still have a question? Call or WhatsApp our team and we will be happy to help.</p>
+              <a class="dc-btn dc-btn-primary" href="/contact-us">Contact DriveCore</a>
+            </div>
+            <div class="dc-faq-list">
+              <article class="dc-faq-item is-open">
+                <button type="button">
+                  <span>How do I book a service?</span>
+                  <i class="fa fa-plus"/>
+                </button>
+                <div>
+                  <p>Use the Book a Service form, call 1 868 375 9633 or message DriveCore on WhatsApp. Online requests are confirmed only after our team contacts you.</p>
+                </div>
+              </article>
+              <article class="dc-faq-item">
+                <button type="button">
+                  <span>Do you work on all makes and models?</span>
+                  <i class="fa fa-plus"/>
+                </button>
+                <div>
+                  <p>DriveCore welcomes a wide range of cars, SUVs and imported vehicles. Share the make, model and year when booking so the team can prepare appropriately.</p>
+                </div>
+              </article>
+              <article class="dc-faq-item">
+                <button type="button">
+                  <span>Can you diagnose warning lights?</span>
+                  <i class="fa fa-plus"/>
+                </button>
+                <div>
+                  <p>Yes. Vehicle diagnostics may include scan-tool checks, live data review and physical inspection. A fault code is a starting point, not always the complete diagnosis.</p>
+                </div>
+              </article>
+              <article class="dc-faq-item">
+                <button type="button">
+                  <span>Will I receive an estimate before repairs?</span>
+                  <i class="fa fa-plus"/>
+                </button>
+                <div>
+                  <p>Where practical, findings and recommended work are discussed before the repair proceeds. Some issues require inspection or diagnostic work before the final scope can be confirmed.</p>
+                </div>
+              </article>
+              <article class="dc-faq-item">
+                <button type="button">
+                  <span>What should I bring to my appointment?</span>
+                  <i class="fa fa-plus"/>
+                </button>
+                <div>
+                  <p>Bring the vehicle keys and any helpful information about symptoms, recent work or warning messages. Remove valuables and ensure the team can access relevant areas of the vehicle.</p>
+                </div>
+              </article>
+              <article class="dc-faq-item">
+                <button type="button">
+                  <span>Where is DriveCore located?</span>
+                  <i class="fa fa-plus"/>
+                </button>
+                <div>
+                  <p>DriveCore is located at 350 Mission Road, Freeport, Trinidad and Tobago.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+        <section class="dc-cta-band">
+          <div class="dc-shell dc-cta-band-inner">
+            <div>
+              <p class="dc-kicker"><span/> Still Unsure?</p>
+              <h2>Speak directly with the DriveCore team.</h2>
+            </div>
+            <a class="dc-btn dc-btn-primary" href="tel:+18683759633">Call 1 868 375 9633</a>
+          </div>
+        </section>
+      </main>
+    </t>
+  </template>
+  <template id="drivecore_contact_page" name="DriveCore Contact Us">
+    <t t-call="website.layout">
+      <t t-set="additional_title">Contact DriveCore | Freeport Trinidad</t>
+      <t t-set="meta_description">Contact DriveCore at 350 Mission Road, Freeport, Trinidad. Call 1 868 375 9633 or email drive.core@outlook.com.</t>
+      <main id="wrap" class="oe_structure dc-page">
+        <section class="dc-inner-hero dc-contact-hero">
+          <div class="dc-shell">
+            <p class="dc-kicker"><span/> Contact Us</p>
+            <h1>We are here to help you get <em>back on the road.</em></h1>
+            <p>Contact DriveCore to ask a question, discuss a vehicle concern or request an appointment.</p>
+          </div>
+        </section>
+        <section class="dc-section">
+          <div class="dc-shell dc-contact-grid">
+            <div class="dc-contact-details">
+              <p class="dc-kicker"><span/> DriveCore Freeport</p>
+              <h2>Talk with our <em>team.</em></h2>
+              <p class="dc-lead">Reach us by phone, email, WhatsApp or visit 350 Mission Road in Freeport.</p>
+              <div class="dc-contact-cards">
+                <a href="tel:+18683759633">
+                  <i class="fa fa-phone"/>
+                  <span>
+                    <small>Phone</small>
+                    <b>1 868 375 9633</b>
+                  </span>
+                </a>
+                <a href="mailto:drive.core@outlook.com">
+                  <i class="fa fa-envelope"/>
+                  <span>
+                    <small>Email</small>
+                    <b>drive.core@outlook.com</b>
+                  </span>
+                </a>
+                <a href="https://maps.google.com/?q=350+Mission+Road+Freeport+Trinidad" target="_blank" rel="noopener">
+                  <i class="fa fa-map-marker"/>
+                  <span>
+                    <small>Address</small>
+                    <b>350 Mission Road, Freeport</b>
+                  </span>
+                </a>
+                <a href="https://www.instagram.com/drivecore.tt/" target="_blank" rel="noopener">
+                  <i class="fa fa-instagram"/>
+                  <span>
+                    <small>Instagram</small>
+                    <b>@drivecore.tt</b>
+                  </span>
+                </a>
+              </div>
+              <div class="dc-hours">
+                <h3>Opening Hours</h3>
+                <p>
+                  <span>Monday–Friday</span>
+                  <b>8:00 AM–5:00 PM</b>
+                </p>
+                <p>
+                  <span>Saturday</span>
+                  <b>8:00 AM–1:00 PM</b>
+                </p>
+                <p>
+                  <span>Sunday</span>
+                  <b>Closed</b>
+                </p>
+                <small>Public holiday hours may vary. Please contact us before visiting.</small>
+              </div>
+            </div>
+            <div class="dc-contact-form-card">
+              <p class="dc-kicker"><span/> Send a Message</p>
+              <h2>How can we <em>help?</em></h2>
+              <t t-if="request.params.get('error') == 'missing'">
+                <div class="dc-alert"><i class="fa fa-exclamation-circle"/> Please enter your name, email and message.</div>
+              </t>
+              <form class="dc-form" action="/drivecore/contact/submit" method="post">
+                <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                <label>
+                  <span>Your Name *</span>
+                  <input type="text" name="name" required="required" autocomplete="name" placeholder="Your full name"/>
+                </label>
+                <label>
+                  <span>Email Address *</span>
+                  <input type="email" name="email" required="required" autocomplete="email" placeholder="name@example.com"/>
+                </label>
+                <label>
+                  <span>Phone Number</span>
+                  <input type="tel" name="phone" autocomplete="tel" placeholder="1 868 000 0000"/>
+                </label>
+                <label>
+                  <span>Subject</span>
+                  <input type="text" name="subject" placeholder="How can we help?"/>
+                </label>
+                <label>
+                  <span>Your Message *</span>
+                  <textarea name="message" rows="6" required="required" placeholder="Tell us about your question or vehicle concern."/>
+                </label>
+                <button class="dc-btn dc-btn-primary dc-submit" type="submit"><i class="fa fa-paper-plane"/> Send Message</button>
+              </form>
+            </div>
+          </div>
+        </section>
+        <section class="dc-map-section">
+          <iframe title="DriveCore location map" src="https://www.google.com/maps?q=350%20Mission%20Road%20Freeport%20Trinidad&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"/>
+        </section>
+      </main>
+    </t>
+  </template>
+  <template id="drivecore_privacy_page" name="DriveCore Privacy Policy">
+    <t t-call="website.layout">
+      <t t-set="additional_title">Privacy Policy | DriveCore</t>
+      <main id="wrap" class="oe_structure dc-page">
+        <section class="dc-inner-hero dc-legal-hero">
+          <div class="dc-shell">
+            <p class="dc-kicker"><span/> Legal</p>
+            <h1>Privacy <em>Policy.</em></h1>
+            <p>How DriveCore handles information submitted through this website.</p>
+          </div>
+        </section>
+        <section class="dc-section">
+          <div class="dc-shell dc-legal-content">
+            <p>
+              <b>Last updated: July 24, 2026</b>
+            </p>
+            <h2>1. Information We Collect</h2>
+            <p>We may collect information you voluntarily submit through contact or booking forms, including your name, phone number, email address, vehicle details, preferred service date and description of the vehicle concern.</p>
+            <h2>2. How We Use Information</h2>
+            <p>Information is used to respond to enquiries, discuss requested services, arrange appointments, provide customer support and maintain records related to your request.</p>
+            <h2>3. Website Data</h2>
+            <p>The website platform may process basic technical information needed for security, performance and normal operation. Any analytics or marketing tools added later should be reviewed and reflected in this policy.</p>
+            <h2>4. Sharing</h2>
+            <p>DriveCore does not sell personal information. Information may be shared only with service providers supporting normal business operations, when required to complete a requested service, or when required by law.</p>
+            <h2>5. Data Security</h2>
+            <p>Reasonable administrative and technical measures are used to protect submitted information. No internet transmission or electronic storage system can be guaranteed completely secure.</p>
+            <h2>6. Retention</h2>
+            <p>Information may be retained for as long as reasonably necessary to manage the enquiry, appointment, customer relationship, legal obligations and business records.</p>
+            <h2>7. Your Choices</h2>
+            <p>You may contact DriveCore to request correction or deletion of information you previously submitted, subject to legal and legitimate record requirements.</p>
+            <h2>8. Contact</h2>
+            <p>Questions about this policy can be sent to <a href="mailto:drive.core@outlook.com">drive.core@outlook.com</a> or 1 868 375 9633.</p>
+            <div class="dc-legal-note">For questions about this policy or how submitted information is handled, contact DriveCore using the details above.</div>
+          </div>
+        </section>
+      </main>
+    </t>
+  </template>
+  <template id="drivecore_terms_page" name="DriveCore Terms and Conditions">
+    <t t-call="website.layout">
+      <t t-set="additional_title">Terms and Conditions | DriveCore</t>
+      <main id="wrap" class="oe_structure dc-page">
+        <section class="dc-inner-hero dc-legal-hero">
+          <div class="dc-shell">
+            <p class="dc-kicker"><span/> Legal</p>
+            <h1>Terms &amp; <em>Conditions.</em></h1>
+            <p>General terms governing use of the DriveCore website and online service requests.</p>
+          </div>
+        </section>
+        <section class="dc-section">
+          <div class="dc-shell dc-legal-content">
+            <p>
+              <b>Last updated: July 24, 2026</b>
+            </p>
+            <h2>1. Website Information</h2>
+            <p>The website provides general information about DriveCore Auto Import &amp; Solutions Limited and its services. Content may be updated without notice and should not be treated as a final diagnosis, quotation or guarantee.</p>
+            <h2>2. Online Service Requests</h2>
+            <p>Submitting a booking form is a request for an appointment only. An appointment is confirmed only when DriveCore contacts the customer and agrees the date, time and initial service details.</p>
+            <h2>3. Inspection and Estimates</h2>
+            <p>Vehicle concerns may require inspection or diagnostic work before the cause, repair scope, parts requirements, price or completion time can be confirmed. Additional issues discovered during service will be discussed where reasonably possible before extra work proceeds.</p>
+            <h2>4. Customer Responsibilities</h2>
+            <p>Customers should provide accurate vehicle and contact information, disclose relevant symptoms or previous repair history, remove valuables and collect vehicles according to agreed arrangements.</p>
+            <h2>5. Parts and Workmanship</h2>
+            <p>Any parts or workmanship warranty will depend on the specific service, supplied part and written terms provided for that job. Normal wear, misuse, accidents, unrelated faults and work performed by others may be excluded.</p>
+            <h2>6. External Links</h2>
+            <p>Links to maps, social platforms or third-party websites are provided for convenience. DriveCore is not responsible for third-party content, availability or privacy practices.</p>
+            <h2>7. Limitation</h2>
+            <p>To the extent permitted by law, DriveCore is not responsible for losses arising solely from reliance on general website information or from interruptions outside its reasonable control.</p>
+            <h2>8. Governing Law</h2>
+            <p>These website terms are governed by the laws of Trinidad and Tobago.</p>
+            <h2>9. Contact</h2>
+            <p>Questions may be directed to <a href="mailto:drive.core@outlook.com">drive.core@outlook.com</a> or 1 868 375 9633.</p>
+            <div class="dc-legal-note">For questions about these terms or a specific service request, contact DriveCore using the details above.</div>
+          </div>
+        </section>
+      </main>
+    </t>
+  </template>
+  <template id="drivecore_thank_you_page" name="DriveCore Request Received">
+    <t t-call="website.layout">
+      <t t-set="additional_title">Request Received | DriveCore</t>
+      <main id="wrap" class="oe_structure dc-page">
+        <section class="dc-thank-you">
+          <div class="dc-thank-you-card">
+            <i class="fa fa-check-circle"/>
+            <p class="dc-kicker"><span/> Request Received</p>
+            <h1>Thank you for contacting <em>DriveCore.</em></h1>
+            <p>Your information has been submitted successfully. A member of our team will contact you using the details provided.</p>
+            <div class="dc-button-row">
+              <a class="dc-btn dc-btn-primary" href="/">Return Home</a>
+              <a class="dc-btn dc-btn-outline" href="tel:+18683759633">Call DriveCore</a>
+            </div>
+          </div>
+        </section>
+      </main>
+    </t>
+  </template>
+  <template id="service_detail_page" name="DriveCore Service Detail">
+    <t t-call="website.layout">
+      <t t-set="additional_title"><t t-out="service['name']"/> | DriveCore</t>
+      <main id="wrap" class="oe_structure dc-page">
+        <section class="dc-inner-hero dc-service-detail-hero" t-attf-style="--dc-service-bg:url('/drivecore_website/static/src/img/real/#{service['image']}')">
+          <div class="dc-shell">
+            <a class="dc-back-link" href="/services"><i class="fa fa-arrow-left"/> All Services</a>
+            <p class="dc-kicker"><span/> DriveCore Service</p>
+            <h1>
+              <t t-out="service['name']"/>
+              <em>.</em>
+            </h1>
+            <p>
+              <t t-out="service['intro']"/>
+            </p>
+            <a class="dc-btn dc-btn-primary" t-attf-href="/book-a-service?service=#{service_slug}">Request This Service</a>
+          </div>
+        </section>
+        <section class="dc-section">
+          <div class="dc-shell dc-service-detail-grid">
+            <div class="dc-service-detail-copy">
+              <p class="dc-kicker"><span/> Professional Vehicle Care</p>
+              <h2>Focused service. <em>Clear guidance.</em></h2>
+              <p class="dc-lead">
+                <t t-out="service['details']"/>
+              </p>
+              <h3>Key benefits</h3>
+              <div class="dc-benefit-grid">
+                <t t-foreach="service['benefits']" t-as="benefit">
+                  <div>
+                    <i class="fa fa-check"/>
+                    <t t-out="benefit"/>
+                  </div>
+                </t>
+              </div>
+              <h3>What to tell us when booking</h3>
+              <p>Share the vehicle make, model and year, describe what you are noticing and let us know when the concern occurs. This helps our team prepare for the initial assessment.</p>
+            </div>
+            <aside class="dc-service-aside">
+              <i t-attf-class="fa #{service['icon']}"/>
+              <h3>Book <t t-out="service['name']"/></h3>
+              <p>Submit a service request and our team will contact you to confirm the next available appointment.</p>
+              <a class="dc-btn dc-btn-primary" t-attf-href="/book-a-service?service=#{service_slug}">Book a Service</a>
+              <a class="dc-btn dc-btn-outline" href="tel:+18683759633">Call 1 868 375 9633</a>
+            </aside>
+          </div>
+        </section>
+        <section class="dc-cta-band">
+          <div class="dc-shell dc-cta-band-inner">
+            <div>
+              <p class="dc-kicker"><span/> Driven by Trust</p>
+              <h2>Professional care for the systems that keep you moving.</h2>
+            </div>
+            <a class="dc-btn dc-btn-primary" href="/contact-us">Ask a Question</a>
+          </div>
+        </section>
+      </main>
+    </t>
+  </template>
+  <record id="page_drivecore_about" model="website.page">
+    <field name="name">About Us</field>
+    <field name="url">/about-us</field>
+    <field name="is_published" eval="True"/>
+    <field name="view_id" ref="drivecore_about_page"/>
+  </record>
+  <record id="page_drivecore_services" model="website.page">
+    <field name="name">Services</field>
+    <field name="url">/services</field>
+    <field name="is_published" eval="True"/>
+    <field name="view_id" ref="drivecore_services_page"/>
+  </record>
+  <record id="page_drivecore_booking" model="website.page">
+    <field name="name">Book a Service</field>
+    <field name="url">/book-a-service</field>
+    <field name="is_published" eval="True"/>
+    <field name="view_id" ref="drivecore_booking_page"/>
+  </record>
+  <record id="page_drivecore_faq" model="website.page">
+    <field name="name">FAQ</field>
+    <field name="url">/faq</field>
+    <field name="is_published" eval="True"/>
+    <field name="view_id" ref="drivecore_faq_page"/>
+  </record>
+  <record id="page_drivecore_contact" model="website.page">
+    <field name="name">Contact Us</field>
+    <field name="url">/contact-us</field>
+    <field name="is_published" eval="True"/>
+    <field name="view_id" ref="drivecore_contact_page"/>
+  </record>
+  <record id="page_drivecore_privacy" model="website.page">
+    <field name="name">Privacy Policy</field>
+    <field name="url">/privacy-policy</field>
+    <field name="is_published" eval="True"/>
+    <field name="view_id" ref="drivecore_privacy_page"/>
+  </record>
+  <record id="page_drivecore_terms" model="website.page">
+    <field name="name">Terms and Conditions</field>
+    <field name="url">/terms-and-conditions</field>
+    <field name="is_published" eval="True"/>
+    <field name="view_id" ref="drivecore_terms_page"/>
+  </record>
+  <record id="page_drivecore_thanks" model="website.page">
+    <field name="name">Request Received</field>
+    <field name="url">/request-received</field>
+    <field name="is_published" eval="True"/>
+    <field name="view_id" ref="drivecore_thank_you_page"/>
+  </record>
+</odoo>
