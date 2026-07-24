@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_drivecore_service_request_list" model="ir.ui.view">
+        <field name="name">drivecore.service.request.list</field>
+        <field name="model">drivecore.service.request</field>
+        <field name="arch" type="xml">
+            <list string="Service Requests" decoration-info="state == 'new'" decoration-success="state == 'booked'" decoration-muted="state in ('completed', 'cancelled')">
+                <field name="create_date" string="Received"/>
+                <field name="name"/>
+                <field name="phone"/>
+                <field name="vehicle_make"/>
+                <field name="vehicle_model"/>
+                <field name="service_type"/>
+                <field name="preferred_date"/>
+                <field name="state" widget="badge"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_drivecore_service_request_form" model="ir.ui.view">
+        <field name="name">drivecore.service.request.form</field>
+        <field name="model">drivecore.service.request</field>
+        <field name="arch" type="xml">
+            <form string="Service Request">
+                <header><field name="state" widget="statusbar" statusbar_visible="new,contacted,booked,completed,cancelled"/></header>
+                <sheet>
+                    <div class="oe_title"><label for="name"/><h1><field name="name"/></h1></div>
+                    <group>
+                        <group string="Customer"><field name="phone"/><field name="email"/></group>
+                        <group string="Appointment"><field name="service_type"/><field name="preferred_date"/><field name="preferred_time"/></group>
+                    </group>
+                    <group string="Vehicle"><field name="vehicle_make"/><field name="vehicle_model"/><field name="vehicle_year"/><field name="registration_number"/></group>
+                    <group string="Issue / Additional Information"><field name="issue_description" nolabel="1"/></group>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_drivecore_service_request_search" model="ir.ui.view">
+        <field name="name">drivecore.service.request.search</field>
+        <field name="model">drivecore.service.request</field>
+        <field name="arch" type="xml">
+            <search string="Service Requests">
+                <field name="name"/><field name="phone"/><field name="email"/><field name="registration_number"/>
+                <filter name="new" string="New" domain="[('state','=','new')]"/>
+                <filter name="booked" string="Booked" domain="[('state','=','booked')]"/>
+                <group expand="0" string="Group By"><filter name="group_service" string="Service" context="{'group_by':'service_type'}"/><filter name="group_state" string="Status" context="{'group_by':'state'}"/></group>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_drivecore_service_requests" model="ir.actions.act_window">
+        <field name="name">Service Requests</field><field name="res_model">drivecore.service.request</field><field name="view_mode">list,form</field><field name="search_view_id" ref="view_drivecore_service_request_search"/>
+    </record>
+
+    <record id="view_drivecore_contact_request_list" model="ir.ui.view">
+        <field name="name">drivecore.contact.request.list</field><field name="model">drivecore.contact.request</field>
+        <field name="arch" type="xml"><list string="Contact Requests" decoration-info="state == 'new'" decoration-muted="state == 'closed'"><field name="create_date" string="Received"/><field name="name"/><field name="email"/><field name="phone"/><field name="subject"/><field name="state" widget="badge"/></list></field>
+    </record>
+
+    <record id="view_drivecore_contact_request_form" model="ir.ui.view">
+        <field name="name">drivecore.contact.request.form</field><field name="model">drivecore.contact.request</field>
+        <field name="arch" type="xml"><form string="Contact Request"><header><field name="state" widget="statusbar" statusbar_visible="new,replied,closed"/></header><sheet><div class="oe_title"><label for="name"/><h1><field name="name"/></h1></div><group><group><field name="email"/><field name="phone"/></group><group><field name="subject"/></group></group><group string="Message"><field name="message" nolabel="1"/></group></sheet><chatter/></form></field>
+    </record>
+
+    <record id="action_drivecore_contact_requests" model="ir.actions.act_window">
+        <field name="name">Contact Requests</field><field name="res_model">drivecore.contact.request</field><field name="view_mode">list,form</field>
+    </record>
+
+    <menuitem id="menu_drivecore_root" name="DriveCore" sequence="80" web_icon="drivecore_website,static/description/icon.png"/>
+    <menuitem id="menu_drivecore_service_requests" name="Service Requests" parent="menu_drivecore_root" action="action_drivecore_service_requests" sequence="10"/>
+    <menuitem id="menu_drivecore_contact_requests" name="Contact Requests" parent="menu_drivecore_root" action="action_drivecore_contact_requests" sequence="20"/>
+</odoo>
