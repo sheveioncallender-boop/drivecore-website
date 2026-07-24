@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!--
+        Keep the DriveCore landing page as the active homepage.
+        Odoo may retain /shop as homepage_url when eCommerce was configured
+        before this website module was installed. This record is intentionally
+        loaded on both install and upgrade so the root URL serves DriveCore.
+    -->
+    <record id="website.default_website" model="website">
+        <field name="homepage_url">/</field>
+    </record>
+</odoo>
