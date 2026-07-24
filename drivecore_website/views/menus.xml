@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- The public header navigation is intentionally hard-coded in layout.xml
+         so it remains pixel-consistent across Community and Enterprise. -->
+</odoo>
