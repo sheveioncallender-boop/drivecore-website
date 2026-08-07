@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="website.default_website" model="website">
+        <field name="name">DriveCore Auto Import &amp; Solutions Limited</field>
+        <field name="homepage_url">/</field>
+        <field name="favicon" type="base64" file="drivecore_website/static/src/img/favicon.png"/>
+    </record>
+    <function model="website" name="drivecore_activate_homepage"/>
+</odoo>
